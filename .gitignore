@@ -1,0 +1,100 @@
+# Environment variables
+# .env - реальные секреты, НЕ коммитить!
+# !.env.example, !.env.test, !.env.prod - исключения (! = НЕ игнорировать)
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.test
+!.env.prod
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Poetry
+poetry.lock
+# Удали эту строку, если хочешь фиксировать версии
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# PyInstaller
+*.spec
+
+# Test and coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+.black/
+.pytest_cache/
+.pyre/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Linter configs
+.pylintrc
+
+# Node / frontend
+node_modules/
+dist/
+*.log
+
+# FastAPI / Uvicorn / Gunicorn
+*.pid
+*.log
+uvicorn.log
+gunicorn.log
+
+# Docker
+docker-compose.override.yml
+*.local.yml
+*.dev.yml
+
+# SQLite (если используется для локальной разработки)
+*.sqlite3
+*.db
+
+# Alembic (игнорируем только кэш, миграции .py ДОЛЖНЫ быть в git!)
+migrations/versions/*.pyc
+migrations/versions/__pycache__/
+migrations/__pycache__/
+
+# Local data / temp
+tmp/
+temp/
+*.tmp
+
+# PyCharm project-level settings
+*.iml
+
+# VSCode Python settings
+.python-version
+
+# Logs
+logs/
+*.log
+
